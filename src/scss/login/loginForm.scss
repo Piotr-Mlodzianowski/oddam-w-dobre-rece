@@ -1,0 +1,73 @@
+@import "../settings/colors";
+
+.login {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    
+    &__header {
+       margin-bottom: 25px;
+       font-size: 40px;
+       letter-spacing: -0.8px;
+       color: $dark-gray;
+
+    }
+    &__decoration {
+        margin-bottom: 48px;
+    }
+}
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+        margin: 0 60px;
+        padding: 40px 70px;
+        background-color: $gray-background;
+    }
+
+    &__label {
+        color: $dark-gray;
+        font-size: 12px;
+        font-weight: 600;
+        }
+
+    &__btns {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+}
+
+    .login__input {
+        display: block;
+        border: none;
+        border-bottom: 1px solid $dark-gray;
+        background-color: $gray-background;
+        margin-top: 20px;
+        padding-right: 50px;
+    }
+
+.form__btn {
+    border: none;
+    background-color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 300;
+    &:visited {
+        color: $dark-gray;
+      }
+    &--login {
+        border: 1px solid $dark-gray;
+    }
+}
+
