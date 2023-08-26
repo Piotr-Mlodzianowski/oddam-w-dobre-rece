@@ -141,32 +141,32 @@ const HomeHelp = () => {
 
     return (
         <section className="help" id="organizations">
-            <h2 className="help-header">Komu pomagamy?</h2>
-            <div className="help-decoration"><img className="help-img" src={decoration}  alt="decoration"/></div>
+            <h2 className="help__header">Komu pomagamy?</h2>
+            <div className="help__decoration"><img className="help__img" src={decoration}  alt="decoration"/></div>
 
-            <div className="help-categories">
-                <input className="help-categories__cat" type="radio" id="fundation" name="category" value="fundation" checked={category === "fundation"} onChange={(e) => {setCategory(e.target.value)
-                setStartPage(0)}}/><label className="help-categories__label" htmlFor="fundation">Fundacjom</label>
+            <div className="help__categories">
+                <input className="help__categories--cat" type="radio" id="fundation" name="category" value="fundation" checked={category === "fundation"} onChange={(e) => {setCategory(e.target.value)
+                setStartPage(0)}}/><label className="help__categories--label" htmlFor="fundation">Fundacjom</label>
 
-                <input className="help-categories__cat" type="radio" id="organization" name="category" value="organization" checked={category === "organization"} onChange={(e) => {setCategory(e.target.value)
-                setStartPage(0)}}/><label className="help-categories__label" htmlFor="organization">Organizacjom <br/>pozarządowym</label>
+                <input className="help__categories--cat" type="radio" id="organization" name="category" value="organization" checked={category === "organization"} onChange={(e) => {setCategory(e.target.value)
+                setStartPage(0)}}/><label className="help__categories--label" htmlFor="organization">Organizacjom <br/>pozarządowym</label>
 
-                <input className="help-categories__cat" type="radio" id="local" name="category" value="local" checked={category === "local"} onChange={(e) => {setCategory(e.target.value)
-                setStartPage(0)}}/><label className="help-categories__label" htmlFor="local">Lokalnym <br/>zbiórkom</label>
+                <input className="help__categories--cat" type="radio" id="local" name="category" value="local" checked={category === "local"} onChange={(e) => {setCategory(e.target.value)
+                setStartPage(0)}}/><label className="help__categories--label" htmlFor="local">Lokalnym <br/>zbiórkom</label>
             </div>
 
-            <p className="help-para">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
+            <p className="help__para">W naszej bazie znajdziesz listę zweryfikowanych Fundacji, z którymi współpracujemy. Możesz sprawdzić czym się zajmują, komu pomagają i czego potrzebują.</p>
 
             <div className="list">
 
             {currentItems.map((item) => 
-            <div className="list-element">
-             <div className="list-element__left">
-                <div className="list-name">{item.organization}</div>
-                <div className="list-descr">{item.descr}</div>
+            <div className="list__element">
+             <div className="list__element--left">
+                <div className="list__name">{item.organization}</div>
+                <div className="list__descr">{item.descr}</div>
              </div>
-             <div className="list-element__right">
-                <div lassName="list-what">{item.what}</div>
+             <div className="list__element--right">
+                <div lassName="list__what">{item.what}</div>
              </div>
             </div>)}
             
