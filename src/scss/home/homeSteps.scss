@@ -1,0 +1,81 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+.homesteps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  &__header {
+      font-size: 35px;
+      margin: 30px;
+      text-align: center;
+    }
+
+  &__decoration {
+      text-align: center;
+      margin-top: 10px;
+    }
+  }
+
+  .steps {
+    background-color: $gray-background;
+    padding: 30px 60px;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+
+  }
+    .box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 50px;
+      width: 160px;
+
+      &__icon {
+        margin-bottom: 15px;
+      }
+      &__title {
+        margin-bottom: 0.75rem;
+        text-align: center;
+        position: relative;
+        &::after {
+          content: "";
+          position: absolute;
+          width: 80px;
+          top: 100%;
+          right: 50%;
+          border: 1px solid $dark-gray;
+          margin-top: 15px;
+          transform: translateX(50%)translateY(50%);
+        }
+      }
+
+      &__descr {
+        margin-top: 15px;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  
+  .navlink {
+    border: 1px solid $olive;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 35px;
+    margin: 30px;
+    padding: 30px 100px;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    span {
+      display: block;
+    }
+    &:visited {
+      color: $dark-gray;
+    }
+  }
