@@ -1,0 +1,40 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  margin: 40px 145px;
+  gap: 30px;
+
+  &__login {
+      display: flex;
+      justify-content: flex-end;
+      gap: 10px;
+
+  .navLink {
+      text-decoration: none;
+      color: $light-gray;
+      padding: 8px;
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $yellow;
+          }
+        }
+    }
+
+  &__menu {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+      gap: 30px;
+      .navLink {
+        padding: 8px 16px;
+        text-decoration: none;
+        &:hover {
+          cursor: pointer;
+          border: 1px solid $dark-gray;
+        }
+      }
+    }
+  }
