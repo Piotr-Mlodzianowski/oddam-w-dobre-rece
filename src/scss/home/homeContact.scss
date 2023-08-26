@@ -1,0 +1,148 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+.contact {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../../assets/Background-Contact-Form.jpg");
+	background-size: contain;
+	background-position: left center;
+	background-position-y: 50px;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	&::before {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		background: #ffffffc9 0% 0% no-repeat padding-box;
+	}
+	&::after {
+		content: '';
+		position: absolute;
+		width: 50%;
+		height: 100%;
+		right: 0;
+		top: 0;
+		background-image: linear-gradient(to left, rgb(255, 255, 255) 50%, rgba(255, 255, 255, 0));
+	}
+
+	&__content {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		position: relative;
+		z-index: 1;
+
+		&--form {
+			display: flex;
+			flex-direction: column;
+			margin-right: 200px;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.form {
+			display: flex;
+			flex-direction: column;
+			&__header {
+				font-size: 30px;
+				margin-bottom: 35px;
+			}
+			&__decoration {
+				margin-bottom: 70px;
+			}
+
+			&__success{
+				margin-top: -40px;
+				margin-bottom: 40px;
+				color: green;
+				font-weight: 700;
+			}
+
+			&__inputs {
+				display: flex;
+				gap: 30px;
+
+				&--box {
+					margin-bottom: 40px;
+				}
+
+				&--label {
+					font-family: $font-base;
+					font-size: 13px;
+					font-weight: 600;
+				}
+
+				&--input {
+					display: block;
+					border: none;
+					border-bottom: 1px solid black;
+					background-color: transparent;
+					line-height: 30px;
+					padding-right: 50px;
+					&::placeholder {
+						color: #3c3c3c26;
+					}
+				}
+			}
+
+			&__textarea {
+				display: block;
+				margin-top: 15px;
+				border: none;
+				border-bottom: 1px solid black;
+				background-color: transparent;
+				width: 100%;
+				min-height: 100px;
+				resize: none;
+				&::placeholder {
+					color: #3c3c3c26;
+				}
+
+				&__label {
+					font-family: $font-base;
+					font-size: 13px;
+					font-weight: 600;
+				}
+			}
+
+			&__send {
+				align-self: flex-end;
+				margin-top: 40px;
+				padding: 13px 50px;
+				border: none;
+				border: 1px solid black;
+				background-color: transparent;
+			}
+		}
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		z-index: 1;
+		padding: 10px 0;
+	}
+
+	.footer {
+		&__blank {
+			margin-left: 200px;
+		}
+		&__copy {
+		}
+		&__list {
+			display: flex;
+			gap: 15px;
+			margin-right: 200px;
+		}
+	}
+}
