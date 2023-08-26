@@ -1,0 +1,32 @@
+@import "../settings/fonts";
+@import "../settings/colors";
+
+.columns {
+  background-color: $yellow;
+  color: $olive;
+  padding: 55px 30px;
+  text-align: center;
+
+  display: flex;
+  justify-content: space-around;
+
+  .box {
+    width: 400px;
+
+    &__number {
+      font-size: 80px;
+      font-weight: 300;
+      margin-bottom: 15px;
+    }
+
+    &__title {
+      font-weight: 600;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+    }
+
+    .column__description {
+      line-height: 25px;
+    }
+  }
+}
