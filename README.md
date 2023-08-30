@@ -11,3 +11,5 @@ Wykorzystano również:
 - React-scroll
 - React-router-dom
 - React-paginate
+
+Strona zawiera formularze wysyłki widomości, rejestrowania konta oraz logowania wraz z działającymi walidacjami poprawności podanych informacji.
